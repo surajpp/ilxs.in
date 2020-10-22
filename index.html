@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<title>Home</title>
+	</head>
+	<body>
+		<header>
+			<div class="logo-container" >
+				<img src="./img/Logo-ilxs_V4.png" alt="logo" />
+				<!--<h4 class="logo" href="./index.html">ILXS</h4>-->
+			</div>
+			<div class="cart"><!--
+				<img src="./img/cart.svg" alt="cart" />-->
+			</div>
+			<br> </br>
+			<nav>
+				<ul class="nav-links" >
+					<li><a class="nav-link" href="./about.html">About</a></li>
+					<li><a class="nav-link" href="./product.html">Products</a></li>
+					<li><a class="nav-link" href="./contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="cart"><!--
+				<img src="./img/cart.svg" alt="cart" />-->
+			</div>
+			<br> </br>
+			<div class="logo-container" >
+				<img src="./img/MKI.png" alt="logo" />
+				<h4 class="logo" >Make In India</h4>
+			</div>
+		</header>
+
+		<main>
+			<section class="presentation">
+				<div class="introduction">
+					<div class="intro-text">
+						<h1>Digital documentation for the future</h1>
+						<p>
+							ILXS focus on development of user friendly and customer centeric solution in the modern documentation.
+						</p>
+					</div>
+					<div class="cta">
+						<button class="cta-select" href="./ietm.html">IETM</button>
+						<button class="cta-select" href="./doc.html">Documentation</button>
+						<button class="cta-select" href="./s100.html">S1000D</button>
+						<!--<button class="cta-select" href="./othr.html">Other</button>-->
+					</div>
+				</div>
+				<div class="cover">
+					<img src="./img/snow.jpg" width="600" alt="matebook" />
+				</div>
+				<div class="cover">
+					<img src="./img/desert.jpg" width="600" alt="matebook" />
+				</div>
+				<div class="cover">
+					<img src="./img/matebook.jpg" width="600" alt="matebook" />
+				</div>
+			</section>
+
+			<div class="laptop-select">
+				<img src="./img/arrow-left.svg" onclick="plusDivs(-1)"/>
+				<div class="coverspot">
+				<img src="./img/dot.svg" alt="" />
+				<img src="./img/dot-full.svg" alt="" />
+				<img src="./img/dot-full.svg" alt="" />
+				</div>
+				<div class="coverspot">
+				<img src="./img/dot-full.svg" alt="" />
+				<img src="./img/dot.svg" alt="" />
+				<img src="./img/dot-full.svg" alt="" />
+				</div>
+				<div class="coverspot">
+				<img src="./img/dot-full.svg" alt="" />
+				<img src="./img/dot-full.svg" alt="" />
+				<img src="./img/dot.svg" alt="" />
+				</div>
+				<img src="./img/arrow-right.svg" onclick="plusDivs(1)"/>
+				
+				<script>
+				var slideIndex = 1;
+				showDivs(slideIndex);
+
+				function plusDivs(n) {
+				  showDivs(slideIndex += n);
+				}
+
+				function showDivs(n) {
+				  var i;
+				  var x = document.getElementsByClassName("cover");
+				  var y = document.getElementsByClassName("coverspot");
+				  if (n > x.length) {slideIndex = 1}
+				  if (n < 1) {slideIndex = x.length}
+				  for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+					y[i].style.display = "none";
+				  }
+				  x[slideIndex-1].style.display = "block";
+				  y[slideIndex-1].style.display = "block";
+				  
+				}
+				</script>
+			</div>
+
+
+			<img class="medium-circle" src="./img/mid-eclipse.svg" alt="" />
+			<img class="small-circle" src="./img/small-eclipse.svg" alt="" />
+		</main>
+	</body>
+</html>
