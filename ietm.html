@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<title>Products </title>
+		<style>
+.collapsible {
+  background-color: #2196f33b;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+	</head>
+	<body>
+		<header>
+			<div class="logo-container" >
+				<img src="./img/Logo-ilxs_V4.png" alt="logo" />
+				<!--<h4 class="logo" href="./index.html">ilxs</h4>-->
+			</div>
+			<div class="cart"><!--
+				<img src="./img/cart.svg" alt="cart" />-->
+			</div>
+			<br> </br>
+			<nav>
+				<ul class="nav-links">
+					<li><a class="nav-link" href="./index.html">Home</a></li>
+					<li><a class="nav-link" href="./about.html">About</a></li>
+					<li><a class="nav-link" href="./product.html">Products</a></li>
+					
+				</ul>
+				</nav>
+			<div class="cart"><!--
+				<img src="./img/cart.svg" alt="cart" />-->
+			</div>
+			<br> </br>
+			<div class="logo-container" >
+				<!--img src="./img/MKI.png" alt="logo" />
+				<h4 class="logo" >Make In India</h4-->
+			</div>
+		</header>
+
+		<main>
+			<section class="presentation">
+				<div class="introduction">
+					<div  class="intro-text" >
+						<h1>IETM</h1>
+						<button type="button" class="collapsible"><h2>Classes of IETM - Type 1</h2></button>
+						<div class="content">
+						<h2>Class 1 </h2>
+						<p>
+							This IETM class follows the structure and format of a printed book, with indexes and table of contents that are hyperlinked into the content of the document.
+						</p>
+						<br>
+						<h2>Class 2</h2>
+						<p>
+							This format includes more hyperlinks than Class I, such as figures, tables and section references. A hyperlinked PDF document is the typical example.
+						</p>
+						<br>						
+						<h2>Class 3</h2>
+						<p>
+							The difference between Class II and Class III is analogous to the difference between PDF book and a web site. The document would be marked up with XML.
+						</p></div>
+						<br>
+						<button type="button" class="collapsible"><h2>Classes of IETM - Type 2</h2></button>
+						<div class="content">
+						<h2>Class 4</h2>
+						<p>
+							Data stored in a relational database, obtaining benefits of data integrity and removal of data redundancy.
+						</p>
+						<br>
+						<h2>Class 5</h2>
+						<p>
+							The IETM system may aggregate data from a large number of users input, feed that to the expert system that analyzes it and then the result gets feed back to the user through the IETM system.
+						</p>
+						<br>
+						<h2>Class 6</h2>
+						<p>
+							Dynamic multi-destination hyperlink system was used. Included system-oriented layers and troubleshooting, assembly and disassembly aspects.
+						</p></div>
+						<br>
+						<button type="button" class="collapsible"><h2>Available in Standards</h2></button>
+						<div class="content">
+						<h2>JSS</h2>
+						<p>
+							Joint Services Specification, a system of documented technical specifications used by the Indian Armed Forces.
+						</p>
+						<br>
+						<h2>JSG</h2>
+						<p>
+							Joint Services Guide, a system of documented technical specifications used by the Indian Armed Forces.
+						</p>
+						</div>
+					</div><!--
+					<div class="cta">
+						<button class="cta-select">IETM</button>
+						<button class="cta-select">Documentation</button>
+						<button class="cta-select">S1000D</button>
+						
+					</div>-->
+				</div>
+				<!--
+				<div class="cover">
+					<img src="./img/matebook.png" alt="matebook" />
+					<img src="./img/snow.jpg" alt="matebook" />
+				</div>-->
+			</section>
+			<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+			  coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.display === "block") {
+				  content.style.display = "none";
+				} else {
+				  content.style.display = "block";
+				}
+			  });
+			}
+			</script>
+		</main>
+	</body

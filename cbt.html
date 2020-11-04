@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<title>Products </title>
+		<style>
+.collapsible {
+  background-color: #2196f33b;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+	</head>
+	<body>
+		<header>
+			<div class="logo-container" >
+				<img src="./img/Logo-ilxs_V4.png" alt="logo" />
+				<!--<h4 class="logo" href="./index.html">ilxs</h4>-->
+			</div>
+			<div class="cart"><!--
+				<img src="./img/cart.svg" alt="cart" />-->
+			</div>
+			<br> </br>
+			<nav>
+				<ul class="nav-links">
+					<li><a class="nav-link" href="./index.html">Home</a></li>
+					<li><a class="nav-link" href="./about.html">About</a></li>
+					<li><a class="nav-link" href="./product.html">Products</a></li>
+					
+				</ul>
+				</nav>
+			<div class="cart"><!--
+				<img src="./img/cart.svg" alt="cart" />-->
+			</div>
+			<br> </br>
+			<div class="logo-container" >
+				<!--img src="./img/MKI.png" alt="logo" />
+				<h4 class="logo" >Make In India</h4-->
+			</div>
+		</header>
+
+		<main>
+			<section class="presentation">
+				<div class="introduction">
+					<div  class="intro-text" >
+						<h2>Computer Based Training</h2>
+						<p>
+							In today’s fast-paced world, it can sometimes be difficult to find the time to advance your career training. Many employees are already busy playing catch up, and few have the time to add to their work skills. However, in order to stay competitive and work more efficiently, it is imperative that all workers learn to incorporate a variety of new skills into their repertoire. Computer based training can help you to effectively increase your knowledge and practical abilities, allowing you to find greater success in the world of work.
+						</p>
+						<br>
+						<h2>CD ROM Based Training</h2>
+						<p>
+							 CD-ROM based training uses simple CD-ROMs to deliver tutorials to your computer. It is the most inexpensive type of computer based training and is usually only used by one student at a time.
+						</p>
+						<br>						
+						<h2>LAN Based Training</h2>
+						<p>
+							LAN based training uses software that is installed on a local area network. This allows a number of different users on the same computer network to access course materials. LAN based training is typically used in schools and offices.						</p>
+						<br>
+						
+						<h2>Web Based Training</h2>
+						<p>
+							Web based training uses interactive tutorials provided through the use of the Internet. Students can use Internet sources to complete activities and tests. Students may also be able to "chat" in real-time with other users of the web based training software, or engage in web conferencing.
+						</p>
+						<br>
+						<button type="button" class="collapsible"><h2>Features of Computer Based Training</h2></button>
+						<div class="content">
+						<p>
+							<li>interactive tutorials</li>
+							<li>glossaries of important terms</li>
+							<li>pop-up instructions</li>
+							<li>real life examples</li>
+							<li>instructional graphics</li>
+							<li>instructional video and audio</li>
+							<li>tests and quizzes</li>
+													</p>
+													<br>
+						</div>
+						</div>
+					</div><!--
+					<div class="cta">
+						<button class="cta-select">IETM</button>
+						<button class="cta-select">Documentation</button>
+						<button class="cta-select">S1000D</button>
+						
+					</div>-->
+				</div>
+				<!--
+				<div class="cover">
+					<img src="./img/matebook.png" alt="matebook" />
+					<img src="./img/snow.jpg" alt="matebook" />
+				</div>-->
+			</section>
+			<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+			  coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.display === "block") {
+				  content.style.display = "none";
+				} else {
+				  content.style.display = "block";
+				}
+			  });
+			}
+			</script>
+		</main>
+	</body

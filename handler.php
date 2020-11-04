@@ -1,19 +1,26 @@
 <?php
-	if(isset($_POST['submit'])){
-		$name=$_POST['name'];
-		$email=$_POST['email'];
-		$message=$_POST['message'];
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+/*
+Tested working with PHP5.4 and above (including PHP 7 )
 
-		$to='contactus@ilxs.in'; // Receiver Email ID, Replace with your email ID
-		$subject='Form Submission';
-		$message="Name :".$name."\n"."Email :".$email."\n"."Wrote the following :"."\n\n".$message;
-		$headers="From: ".$email;
+ */
+require_once './vendor/autoload.php';
 
-		if(mail($to, $subject, $message, $headers)){
-			echo "<h1>Sent Successfully! Thank you"." ".$name.", We will contact you shortly!</h1>";
-		}
-		else{
-			echo "Something went wrong!";
-		}
-	}
-?>
+use FormGuide\Handlx\FormHandler;
+
+
+$pp = new FormHandler(); 
+
+$validator = $pp->getValidator();
+$validator->fields(['name','email'])->areRequired()->maxLength(50);
+$validator->field('email')->isEmail();
+$validator->field('message')->maxLength(6000);
+
+
+
+
+$pp->sendEmailTo('contactus@ilxs.in'); // ← Your email here
+
+echo $pp->process($_POST);

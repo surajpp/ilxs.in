@@ -1,5 +1,5 @@
 * {
-	margin: 0px;
+	margin: 1px;
 	padding: 0px;
 	box-sizing: border-box;
 }
@@ -17,6 +17,7 @@ header {
 	height: 10vh;
 	margin: auto;
 	align-items: center;
+	
 }
 
 .logo-container,
@@ -53,7 +54,7 @@ nav {
 	display: flex;
 	width: 90%;
 	margin: auto;
-	min-height: 80vh;
+	min-height: 75vh;
 	align-items: center;
 }
 .introduction {
@@ -65,6 +66,16 @@ nav {
 	background: linear-gradient(to right, #494964, #6f6f89);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	text-align: left;
+}
+.intro-text h2 {
+	font-size: 36px;
+	font-weight: 500;
+	background: linear-gradient(to right, #494964, #6f6f89);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: #585772;
+	text-align: left;
 }
 .intro-text p {
 	margin-top: 5px;
@@ -75,11 +86,11 @@ nav {
 	padding: 50px 0px 0px 0px;
 }
 .cta-select {
-	border: 2px solid #c36cbb;
+	border: 2px solid #888;
 	background: transparent;
-	color: #c36cbb;
-	width: 150px;
-	height: 50px;
+	color: rgb(84 106 135);
+	width: 135px;
+	height: 40px;
 	cursor: pointer;
 	font-size: 16px;
 }
@@ -91,17 +102,19 @@ nav {
 	font-size: 16px;
 	border: none;
 	color: white;
-	margin: 30px 0px 0px 30px;
+	margin: 30px 5px 5px 30px;
 }
 
 .cover {
 	flex: 1;
 	display: flex;
 	justify-content: center;
-	height: 60vh;
+	height: 100%;
+	position: relative;
 }
 .cover img {
 	height: 100%;
+	width: 100%;
 	filter: drop-shadow(0px 5px 3px black);
 	animation: drop 1.5s ease;
 }
@@ -109,7 +122,7 @@ nav {
 	flex: 1;
 	display: flex;
 	justify-content: center;
-	
+	position: relative;
 }
 .coverspot img {
 	height: 100%;
@@ -144,6 +157,7 @@ nav {
 	justify-content: space-around;
 	position: absolute;
 	right: 20%;
+	
 }
 
 .form-control {
@@ -221,6 +235,8 @@ nav {
 	background-repeat:no-repeat;    
 }
 
+
+
 @keyframes drop {
 	0% {
 		opacity: 0;
@@ -251,7 +267,6 @@ nav {
 		padding: 10px 0px 0px 0px;
 	}
 	.laptop-select {
-		bottom: 5%;
 		right: 50%;
 		width: 50%;
 		transform: translate(50%, 5%);

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<title>Products </title>
+		<style>
+.collapsible {
+  background-color: #2196f33b;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+	</head>
+	<body>
+		<header>
+			<div class="logo-container" >
+				<img src="./img/Logo-ilxs_V4.png" alt="logo" />
+				<!--<h4 class="logo" href="./index.html">ilxs</h4>-->
+			</div>
+			<div class="cart"><!--
+				<img src="./img/cart.svg" alt="cart" />-->
+			</div>
+			<br> </br>
+			<nav>
+				<ul class="nav-links">
+					<li><a class="nav-link" href="./index.html">Home</a></li>
+					<li><a class="nav-link" href="./about.html">About</a></li>
+					<li><a class="nav-link" href="./product.html">Products</a></li>
+					
+				</ul>
+				</nav>
+			<div class="cart"><!--
+				<img src="./img/cart.svg" alt="cart" />-->
+			</div>
+			<br> </br>
+			<div class="logo-container" >
+				<!--img src="./img/MKI.png" alt="logo" />
+				<h4 class="logo" >Make In India</h4-->
+			</div>
+		</header>
+
+		<main>
+			<section class="presentation">
+				<div class="introduction">
+					<div  class="intro-text" >
+						<h1>Documentation</h1>
+						<button type="button" class="collapsible"><h2>Available in Standards</h2></button>
+						<div class="content">
+						<h2>JSS</h2>
+						<p>
+							Joint Services Specification, a system of documented technical specifications used by the Indian Armed Forces.
+						</p>
+						<br>
+						<h2>JSG</h2>
+						<p>
+							Joint Services Guide, a system of documented technical specifications used by the Indian Armed Forces.
+						</p>
+						</div>
+						<button type="button" class="collapsible"><h2>Tools Used</h2></button>
+						<div class="content">
+						<h2>Framemaker</h2>
+						<br>
+						<h2>Acrobat</h2>
+						<br>
+						<h2>Arbotex</h2>
+						<br>
+						<h2>TEXmaker</h2>
+						<br>
+						<h2>MS word</h2>
+						</div>
+					</div><!--
+					<div class="cta">
+						<button class="cta-select">IETM</button>
+						<button class="cta-select">Documentation</button>
+						<button class="cta-select">S1000D</button>
+						
+					</div>-->
+				</div>
+				<!--
+				<div class="cover">
+					<img src="./img/matebook.png" alt="matebook" />
+					<img src="./img/snow.jpg" alt="matebook" />
+				</div>-->
+			</section>
+			<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+			  coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.display === "block") {
+				  content.style.display = "none";
+				} else {
+				  content.style.display = "block";
+				}
+			  });
+			}
+			</script>
+		</main>
+	</body
