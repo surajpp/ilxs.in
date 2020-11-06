@@ -11,29 +11,37 @@
 		<link rel="stylesheet" href="./style.css" />
 		<title>Products </title>
 		<style>
-.collapsible {
-  background-color: #2196f33b;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
+		.collapsible {
+		  background-color: #2196f33b;
+		  color: white;
+		  cursor: pointer;
+		  padding: 10px;
+		  width: 100%;
+		  border: none;
+		  text-align: left;
+		  outline: none;
+		  font-size: 15px;
+		  .up {
+		  display: none;
+		  vertical-align: baseline;
+		}
+		.dwn {
+		  display: block;
+			vertical-align: baseline;
+		}
+		}
+		
+		.active, .collapsible:hover {
+		  
+		}
 
-.active, .collapsible:hover {
-  
-}
-
-.content {
-  padding: 0 18px;
-  display: none;
-  width: 100%;
-  overflow: hidden;
-  background-color: #f1f1f1;
-  text-align: left;
+		.content {
+		  padding: 0 10px;
+		  display: none;
+		  width: 100%;
+		  overflow: hidden;
+		  background-color: #f1f1f1;
+		}
 }
 </style>
 	</head>
@@ -89,16 +97,16 @@
 							Web based training uses interactive tutorials provided through the use of the Internet. Students can use Internet sources to complete activities and tests. Students may also be able to "chat" in real-time with other users of the web based training software, or engage in web conferencing.
 						</p>
 						<br>
-						<button type="button" class="collapsible"><h2>Features of CBT</h2></button>
-						<div class="content">
-						<p>
-							<li>interactive tutorials</li>
-							<li>glossaries of important terms</li>
-							<li>pop-up instructions</li>
-							<li>real life examples</li>
-							<li>instructional graphics</li>
-							<li>instructional video and audio</li>
-							<li>tests and quizzes</li>
+						<button type="button" class="collapsible"><h2>Features of CBT<img id="drp" src="./img/dwn.jpg" height="35hv" align="right"/></h2></button>
+						<div class="content" align="left">
+						<p >
+							<li>Interactive tutorials</li>
+							<li>Glossaries of important terms</li>
+							<li>Pop-up instructions</li>
+							<li>Real life examples</li>
+							<li>Instructional graphics</li>
+							<li>Instructional video and audio</li>
+							<li>Tests and quizzes</li>
 													</p>
 													<br>
 						</div>
@@ -120,15 +128,19 @@
 			<script>
 			var coll = document.getElementsByClassName("collapsible");
 			var i;
-
+				
 			for (i = 0; i < coll.length; i++) {
 			  coll[i].addEventListener("click", function() {
 				this.classList.toggle("active");
 				var content = this.nextElementSibling;
+				var drp;
+				
 				if (content.style.display === "block") {
 				  content.style.display = "none";
+				  document.getElementById('drp').src="./img/dwn.jpg";
 				} else {
 				  content.style.display = "block";
+				document.getElementById('drp').src="./img/up.jpg";
 				}
 			  });
 			}

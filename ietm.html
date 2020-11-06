@@ -11,29 +11,37 @@
 		<link rel="stylesheet" href="./style.css" />
 		<title>Products </title>
 		<style>
-.collapsible {
-  background-color: #2196f33b;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
+		.collapsible {
+		  background-color: #2196f33b;
+		  color: white;
+		  cursor: pointer;
+		  padding: 10px;
+		  width: 100%;
+		  border: none;
+		  text-align: left;
+		  outline: none;
+		  font-size: 15px;
+		  .up {
+		  display: none;
+		  vertical-align: baseline;
+		}
+		.dwn {
+		  display: block;
+			vertical-align: baseline;
+		}
+		}
+		
+		.active, .collapsible:hover {
+		  
+		}
 
-.active, .collapsible:hover {
-  
-}
-
-.content {
-  padding: 0 18px;
-  display: none;
-  width: 100%;
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
+		.content {
+		  padding: 0 10px;
+		  display: none;
+		  width: 100%;
+		  overflow: hidden;
+		  background-color: #f1f1f1;
+		}
 </style>
 	</head>
 	<body>
@@ -63,13 +71,12 @@
 				<h4 class="logo" >Make In India</h4-->
 			</div>
 		</header>
-
 		<main>
 			<section class="presentation">
 				<div class="introduction">
-					<div  class="intro-text" >
+					<div class="intro-text">
 						<h1>IETM</h1>
-						<button type="button" class="collapsible"><h2>Classes of IETM - Type 1</h2></button>
+						<button type="button" class="collapsible" onclick="b1()"><h2>Classes of IETM - Type 1 <img id="drp1" src="./img/dwn.jpg" height="35hv" align="right"/></h2></button>
 						<div class="content">
 						<h2>Class 1 </h2>
 						<p>
@@ -84,9 +91,8 @@
 						<h2>Class 3</h2>
 						<p>
 							The difference between Class II and Class III is analogous to the difference between PDF book and a web site. The document would be marked up with XML.
-						</p></div>
-						<br>
-						<button type="button" class="collapsible"><h2>Classes of IETM - Type 2</h2></button>
+						</p></div><br>
+						<button type="button" class="collapsible" onclick="b2()"><h2>Classes of IETM - Type 2<img id="drp2" src="./img/dwn.jpg" height="35hv" align="right"/></h2></button>
 						<div class="content">
 						<h2>Class 4</h2>
 						<p>
@@ -101,9 +107,8 @@
 						<h2>Class 6</h2>
 						<p>
 							Dynamic multi-destination hyperlink system was used. Included system-oriented layers and troubleshooting, assembly and disassembly aspects.
-						</p></div>
-						<br>
-						<button type="button" class="collapsible"><h2>Available in Standards</h2></button>
+						</p></div><br>
+						<button type="button" id="b3" class="collapsible" onclick="b3()"><h2>Available in Standards<img id="drp3" src="./img/dwn.jpg" height="35hv" align="right"/></h2></button>
 						<div class="content">
 						<h2>JSS</h2>
 						<p>
@@ -113,6 +118,13 @@
 						<h2>JSG</h2>
 						<p>
 							Joint Services Guide, a system of documented technical specifications used by the Indian Armed Forces.
+						</p>
+						<br>
+						<h2>Our IETM Comply to:</h2>
+						<p>
+							<li>MIL-PRF-87268</li>
+							<li>MIL-D-87269</li>
+							<li>MIL-M-87270</li>
 						</p>
 						</div>
 					</div><!--
@@ -132,17 +144,45 @@
 			<script>
 			var coll = document.getElementsByClassName("collapsible");
 			var i;
-
+			var j=0;	
 			for (i = 0; i < coll.length; i++) {
 			  coll[i].addEventListener("click", function() {
 				this.classList.toggle("active");
 				var content = this.nextElementSibling;
+				
 				if (content.style.display === "block") {
 				  content.style.display = "none";
-				} else {
+				  j=0;
+				 } else {
 				  content.style.display = "block";
+				j=1;
 				}
-			  });
+			  }
+			  );
+			}
+			
+			function b1(){		
+			if (j === 0) {
+				  document.getElementById("drp1").src="./img/up.jpg";
+				  
+				 } else {
+				 document.getElementById("drp1").src="./img/dwn.jpg";				
+				}
+			}
+			
+			function b2(){
+			if (j === 0) {
+				  document.getElementById("drp2").src="./img/up.jpg";				  
+				 } else {
+				 document.getElementById("drp2").src="./img/dwn.jpg";				
+				}
+			}
+			function b3(){
+			if (j === 0) {
+				  document.getElementById("drp3").src="./img/up.jpg";				  
+				 } else {
+				 document.getElementById("drp3").src="./img/dwn.jpg";				
+				}
 			}
 			</script>
 		</main>

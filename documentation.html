@@ -11,28 +11,37 @@
 		<link rel="stylesheet" href="./style.css" />
 		<title>Products </title>
 		<style>
-.collapsible {
-  background-color: #2196f33b;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
+		.collapsible {
+		  background-color: #2196f33b;
+		  color: white;
+		  cursor: pointer;
+		  padding: 10px;
+		  width: 100%;
+		  border: none;
+		  text-align: left;
+		  outline: none;
+		  font-size: 15px;
+		  .up {
+		  display: none;
+		  vertical-align: baseline;
+		}
+		.dwn {
+		  display: block;
+			vertical-align: baseline;
+		}
+		}
+		
+		.active, .collapsible:hover {
+		  
+		}
 
-.active, .collapsible:hover {
-  
-}
-
-.content {
-  padding: 0 18px;
-  display: none;
-  width: 100%;
-  overflow: hidden;
-  background-color: #f1f1f1;
+		.content {
+		  padding: 0 10px;
+		  display: none;
+		  width: 100%;
+		  overflow: hidden;
+		  background-color: #f1f1f1;
+		}
 }
 </style>
 	</head>
@@ -69,7 +78,7 @@
 				<div class="introduction">
 					<div  class="intro-text" >
 						<h1>Documentation</h1>
-						<button type="button" class="collapsible"><h2>Available in Standards</h2></button>
+						<button type="button" class="collapsible" onclick="b1()"><h2>Available in Standards<img id="drp1" src="./img/dwn.jpg" height="35hv" align="right"/></h2></button>
 						<div class="content">
 						<h2>JSS</h2>
 						<p>
@@ -79,18 +88,21 @@
 						<h2>JSG</h2>
 						<p>
 							Joint Services Guide, a system of documented technical specifications used by the Indian Armed Forces.
+						</p><br>
+						<h2>S1000D</h2>
+						<p>
+							S1000D is an XML specification for preparing, managing, and publishing technical information for a product.
 						</p>
-						</div>
-						<button type="button" class="collapsible"><h2>Tools Used</h2></button>
+						</div><br>
+						<button type="button" class="collapsible" onclick="b2()"><h2>Tools Used<img id="drp2" src="./img/dwn.jpg" height="35hv" align="right"/></h2></button>
 						<div class="content">
 						<h2>Framemaker</h2>
-						<br>
 						<h2>Acrobat</h2>
-						<br>
+						
 						<h2>Arbotex</h2>
-						<br>
+						
 						<h2>TEXmaker</h2>
-						<br>
+						
 						<h2>MS word</h2>
 						</div>
 					</div><!--
@@ -110,18 +122,40 @@
 			<script>
 			var coll = document.getElementsByClassName("collapsible");
 			var i;
-
+			var j=0;	
 			for (i = 0; i < coll.length; i++) {
 			  coll[i].addEventListener("click", function() {
 				this.classList.toggle("active");
 				var content = this.nextElementSibling;
+				
 				if (content.style.display === "block") {
 				  content.style.display = "none";
-				} else {
+				  j=0;
+				 } else {
 				  content.style.display = "block";
+				j=1;
 				}
-			  });
+			  }
+			  );
 			}
+			
+			function b1(){		
+			if (j === 0) {
+				  document.getElementById("drp1").src="./img/up.jpg";
+				  
+				 } else {
+				 document.getElementById("drp1").src="./img/dwn.jpg";				
+				}
+			}
+			
+			function b2(){
+			if (j === 0) {
+				  document.getElementById("drp2").src="./img/up.jpg";				  
+				 } else {
+				 document.getElementById("drp2").src="./img/dwn.jpg";				
+				}
+			}
+			
 			</script>
 		</main>
 	</body

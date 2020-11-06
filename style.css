@@ -1,4 +1,4 @@
-* {
+*{
 	margin: 1px;
 	padding: 0px;
 	box-sizing: border-box;
@@ -55,7 +55,7 @@ nav {
 	width: 90%;
 	margin: auto;
 	min-height: 75vh;
-	align-items: center;
+	align-items: stretch;
 }
 .introduction {
 	flex: 1;
@@ -123,9 +123,11 @@ nav {
 	display: flex;
 	justify-content: center;
 	position: relative;
+	
 }
 .coverspot img {
 	height: 100%;
+	
 	animation: 1.5s ease;
 }
 .big-circle {
@@ -152,11 +154,11 @@ nav {
 }
 
 .laptop-select {
-	width: 15%;
+	width: 25%;
 	display: flex;
 	justify-content: space-around;
 	position: absolute;
-	right: 20%;
+	right: 15%;
 	
 }
 
@@ -204,11 +206,13 @@ nav {
 
 .form-group {
     margin-bottom: 15px;
+	text-align: left;
 }
 
 .modal-body {
     position: relative;
     padding: 15px;
+	text-align: left;
 }
 
 /* The Close Button */
@@ -225,16 +229,6 @@ nav {
   text-decoration: none;
   cursor: pointer;
 }
-
-.containerct
-{
-    height: 100%;
-    width:100%;
-    background-image: url("images/singapore-river-255116_1920.jpg");
-	background-size: cover;
-	background-repeat:no-repeat;    
-}
-
 
 
 @keyframes drop {
