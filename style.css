@@ -1,5 +1,5 @@
 *{
-	margin: 1px;
+	margin: 2px;
 	padding: 0px;
 	box-sizing: border-box;
 }
@@ -262,7 +262,7 @@ nav {
 	}
 	.laptop-select {
 		right: 50%;
-		width: 50%;
+		width: 100%;
 		transform: translate(50%, 5%);
 	}
 	.cover img {
