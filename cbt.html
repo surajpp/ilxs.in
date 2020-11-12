@@ -18,6 +18,7 @@
 		  padding: 10px;
 		  width: 100%;
 		  border: none;
+		  border-radius: 5px;
 		  text-align: left;
 		  outline: none;
 		  font-size: 15px;
@@ -37,40 +38,31 @@
 
 		.content {
 		  padding: 0 10px;
-		  display: none;
+		  display: block;
 		  width: 100%;
 		  overflow: hidden;
-		  background-color: #f1f1f1;
+		  background-color: transparent;
 		}
 }
 </style>
 	</head>
-	<body>
+	<body style="background-image:url('./img/backgnd.jpg'); margin: 0px;">
 		<header>
-			<div class="logo-container" >
+			<div class="logo-container" onclick="window.location.href='./index.html'">
 				<img src="./img/Logo-ilxs_V4.png" alt="logo" />
 				<!--<h4 class="logo" href="./index.html">ilxs</h4>-->
-			</div>
-			<div class="cart"><!--
-				<img src="./img/cart.svg" alt="cart" />-->
-			</div>
-			<br> </br>
-			<nav>
-				<ul class="nav-links">
+			</div>		
+			<nav >			
+				<ul class="nav-links" >
+				
 					<li><a class="nav-link" href="./index.html">Home</a></li>
-					<li><a class="nav-link" href="./about.html">About</a></li>
+					<li><a class="nav-link" >|</a></li>
 					<li><a class="nav-link" href="./product.html">Products</a></li>
-					
+					<li><a class="nav-link" >|</a></li>
+					<li><a class="nav-link" href="./contact.html">Contact</a></li>
 				</ul>
-				</nav>
-			<div class="cart"><!--
-				<img src="./img/cart.svg" alt="cart" />-->
-			</div>
-			<br> </br>
-			<div class="logo-container" >
-				<!--img src="./img/MKI.png" alt="logo" />
-				<h4 class="logo" >Make In India</h4-->
-			</div>
+			</nav>	
+		</header>
 		</header>
 
 		<main>
@@ -97,9 +89,9 @@
 							Web based training uses interactive tutorials provided through the use of the Internet. Students can use Internet sources to complete activities and tests. Students may also be able to "chat" in real-time with other users of the web based training software, or engage in web conferencing.
 						</p>
 						<br>
-						<button type="button" class="collapsible"><h2>Features of CBT<img id="drp" src="./img/dwn.jpg" height="35hv" align="right"/></h2></button>
+						<button type="button" class="collapsible"><h2>Features of CBT<!--img id="drp" src="./img/dwn.jpg" height="35hv" align="right"/--></h2></button>
 						<div class="content" align="left">
-						<p >
+						<h3><p >
 							<li>Interactive tutorials</li>
 							<li>Glossaries of important terms</li>
 							<li>Pop-up instructions</li>
@@ -107,8 +99,8 @@
 							<li>Instructional graphics</li>
 							<li>Instructional video and audio</li>
 							<li>Tests and quizzes</li>
-													</p>
-													<br>
+													</p></h3>
+													
 						</div>
 						</div>
 					</div><!--
@@ -136,7 +128,7 @@
 				var drp;
 				
 				if (content.style.display === "block") {
-				  content.style.display = "none";
+				  content.style.display = "block";
 				  document.getElementById('drp').src="./img/dwn.jpg";
 				} else {
 				  content.style.display = "block";

@@ -1,5 +1,5 @@
 *{
-	margin: 2px;
+	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
 }
@@ -13,9 +13,9 @@ button {
 
 header {
 	display: flex;
-	width: 90%;
-	height: 10vh;
-	margin: auto;
+	width: 100%;
+	
+	margin: 2px;
 	align-items: center;
 	
 }
@@ -28,22 +28,27 @@ header {
 
 .logo-container {
 	flex: 1;
+	
+	height: suto;
 }
 .logo {
 	font-weight: 400;
 	margin: 5px;
 }
 nav {
-	flex: 2;
+	flex: 1;
+	margin: 0px;
 }
 .nav-links {
-	justify-content: space-around;
+	flex: 1;
+	justify-content: flex-end;
 	list-style: none;
 }
 .nav-link {
-	color: #5f5f79;
-	font-size: 18px;
+	color: #ffffff;
+	font-size: auto;
 	text-decoration: none;
+	padding-right: 1px;
 }
 .cart {
 	flex: 1;
@@ -54,7 +59,7 @@ nav {
 	display: flex;
 	width: 90%;
 	margin: auto;
-	min-height: 75vh;
+	min-height: auto;
 	align-items: stretch;
 }
 .introduction {
@@ -63,7 +68,7 @@ nav {
 .intro-text h1 {
 	font-size: 44px;
 	font-weight: 500;
-	background: linear-gradient(to right, #494964, #6f6f89);
+	background: linear-gradient(to right, #d3d3d3, #d3d3d3);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	text-align: left;
@@ -71,28 +76,48 @@ nav {
 .intro-text h2 {
 	font-size: 36px;
 	font-weight: 500;
-	background: linear-gradient(to right, #494964, #6f6f89);
+	background: linear-gradient(to right, #d3d3d3, #d3d3d3);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: #585772;
+	text-align: left;
+}
+.intro-text h3 {
+	font-size: 26px;
+	font-weight: 500;
+	background: linear-gradient(to right, #d3d3d3, #d3d3d3);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	color: #585772;
 	text-align: left;
 }
 .intro-text p {
-	margin-top: 5px;
+	
 	font-size: 22px;
-	color: #585772;
+	color: #ffffff;
+	margin: 5px;
 }
 .cta {
 	padding: 50px 0px 0px 0px;
+	
+}
+.intro-select {
+	
+	background: transparent;
+	color: #ffffff;
+	font-size: 20px;
+		
 }
 .cta-select {
-	border: 2px solid #888;
+	border: 2px solid #ffffff;
+	border-radius: 5px;
 	background: transparent;
-	color: rgb(84 106 135);
+	color: #ffffff;
 	width: 135px;
 	height: 40px;
 	cursor: pointer;
 	font-size: 16px;
+	margin: 1px;
 }
 .cta-add {
 	background: #c36cbb;
@@ -103,6 +128,7 @@ nav {
 	border: none;
 	color: white;
 	margin: 30px 5px 5px 30px;
+	color: #ffffff;
 }
 
 .cover {
@@ -111,23 +137,28 @@ nav {
 	justify-content: center;
 	height: 100%;
 	position: relative;
+	margin: 2px; 
 }
 .cover img {
 	height: 100%;
 	width: 100%;
-	filter: drop-shadow(0px 5px 3px black);
+	filter: drop-shadow (0px 5px 3px black);
 	animation: drop 1.5s ease;
+	border-radius: 8px;
 }
 .coverspot {
 	flex: 1;
 	display: flex;
 	justify-content: center;
 	position: relative;
-	
+	background: transparent;
+	margin-top: 2px;
+	padding: 0;
 }
 .coverspot img {
-	height: 100%;
-	
+	color: #6f;
+	height: auto;
+	background: transparent;
 	animation: 1.5s ease;
 }
 .big-circle {
@@ -159,7 +190,9 @@ nav {
 	justify-content: space-around;
 	position: absolute;
 	right: 15%;
-	
+	background: transparent;
+	margin-top: 2px;
+	padding: 0;
 }
 
 .form-control {
@@ -256,14 +289,17 @@ nav {
 	.intro-text p {
 		text-align: justify;
 		font-size: 18px;
+		
 	}
 	.cta {
 		padding: 10px 0px 0px 0px;
+		
 	}
 	.laptop-select {
 		right: 50%;
 		width: 100%;
 		transform: translate(50%, 5%);
+		margin-top: 2px;
 	}
 	.cover img {
 		height: 80%;

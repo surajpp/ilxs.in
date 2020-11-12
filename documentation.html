@@ -18,6 +18,7 @@
 		  padding: 10px;
 		  width: 100%;
 		  border: none;
+		  border-radius: 5px;
 		  text-align: left;
 		  outline: none;
 		  font-size: 15px;
@@ -37,40 +38,30 @@
 
 		.content {
 		  padding: 0 10px;
-		  display: none;
+		  display: block;
 		  width: 100%;
 		  overflow: hidden;
-		  background-color: #f1f1f1;
+		  background-color: transparent;
 		}
 }
 </style>
 	</head>
-	<body>
+	<body style="background-image:url('./img/backgnd.jpg'); margin: 0px;">
 		<header>
-			<div class="logo-container" >
-				<img src="./img/Logo-ilxs_V4.png" alt="logo" />
+<div class="logo-container" onclick="window.location.href='./index.html'">
+				<img src="./img/Logo-ilxs_V4.png" alt="logo"/>
 				<!--<h4 class="logo" href="./index.html">ilxs</h4>-->
-			</div>
-			<div class="cart"><!--
-				<img src="./img/cart.svg" alt="cart" />-->
-			</div>
-			<br> </br>
-			<nav>
-				<ul class="nav-links">
+			</div>		
+			<nav >			
+				<ul class="nav-links" >
+				
 					<li><a class="nav-link" href="./index.html">Home</a></li>
-					<li><a class="nav-link" href="./about.html">About</a></li>
+					<li><a class="nav-link" >|</a></li>
 					<li><a class="nav-link" href="./product.html">Products</a></li>
-					
+					<li><a class="nav-link" >|</a></li>
+					<li><a class="nav-link" href="./contact.html">Contact</a></li>
 				</ul>
-				</nav>
-			<div class="cart"><!--
-				<img src="./img/cart.svg" alt="cart" />-->
-			</div>
-			<br> </br>
-			<div class="logo-container" >
-				<!--img src="./img/MKI.png" alt="logo" />
-				<h4 class="logo" >Make In India</h4-->
-			</div>
+			</nav>	
 		</header>
 
 		<main>
@@ -78,7 +69,7 @@
 				<div class="introduction">
 					<div  class="intro-text" >
 						<h1>Documentation</h1>
-						<button type="button" class="collapsible" onclick="b1()"><h2>Available in Standards<img id="drp1" src="./img/dwn.jpg" height="35hv" align="right"/></h2></button>
+						<button type="button" class="collapsible" ><h2>Available in Standards<!--img id="drp1" src="./img/dwn.jpg" height="35hv" align="right"/--></h2></button>
 						<div class="content">
 						<h2>JSS</h2>
 						<p>
@@ -94,7 +85,7 @@
 							S1000D is an XML specification for preparing, managing, and publishing technical information for a product.
 						</p>
 						</div><br>
-						<button type="button" class="collapsible" onclick="b2()"><h2>Tools Used<img id="drp2" src="./img/dwn.jpg" height="35hv" align="right"/></h2></button>
+						<button type="button" class="collapsible" ><h2>Tools Used<!--img id="drp2" src="./img/dwn.jpg" height="35hv" align="right"/--></h2></button>
 						<div class="content">
 						<h2>Framemaker</h2>
 						<h2>Acrobat</h2>
@@ -129,7 +120,7 @@
 				var content = this.nextElementSibling;
 				
 				if (content.style.display === "block") {
-				  content.style.display = "none";
+				  content.style.display = "block";
 				  j=0;
 				 } else {
 				  content.style.display = "block";

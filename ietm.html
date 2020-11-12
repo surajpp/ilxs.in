@@ -18,6 +18,7 @@
 		  padding: 10px;
 		  width: 100%;
 		  border: none;
+		  border-radius: 5px;
 		  text-align: left;
 		  outline: none;
 		  font-size: 15px;
@@ -37,95 +38,85 @@
 
 		.content {
 		  padding: 0 10px;
-		  display: none;
+		  display: block	;
 		  width: 100%;
 		  overflow: hidden;
-		  background-color: #f1f1f1;
+		  background-color: transparent;
 		}
 </style>
 	</head>
-	<body>
+	<body style="background-image:url('./img/backgnd.jpg'); margin: 0px;">
 		<header>
-			<div class="logo-container" >
+			<div class="logo-container" onclick="window.location.href='./index.html'">
 				<img src="./img/Logo-ilxs_V4.png" alt="logo" />
 				<!--<h4 class="logo" href="./index.html">ilxs</h4>-->
-			</div>
-			<div class="cart"><!--
-				<img src="./img/cart.svg" alt="cart" />-->
-			</div>
-			<br> </br>
-			<nav>
-				<ul class="nav-links">
+			</div>		
+			<nav >			
+				<ul class="nav-links" >
+				
 					<li><a class="nav-link" href="./index.html">Home</a></li>
-					<li><a class="nav-link" href="./about.html">About</a></li>
+					<li><a class="nav-link" >|</a></li>
 					<li><a class="nav-link" href="./product.html">Products</a></li>
-					
+					<li><a class="nav-link" >|</a></li>
+					<li><a class="nav-link" href="./contact.html">Contact</a></li>
 				</ul>
-				</nav>
-			<div class="cart"><!--
-				<img src="./img/cart.svg" alt="cart" />-->
-			</div>
-			<br> </br>
-			<div class="logo-container" >
-				<!--img src="./img/MKI.png" alt="logo" />
-				<h4 class="logo" >Make In India</h4-->
-			</div>
+			</nav>	
 		</header>
 		<main>
 			<section class="presentation">
 				<div class="introduction">
 					<div class="intro-text">
-						<h1>IETM</h1>
-						<button type="button" class="collapsible" onclick="b1()"><h2>Classes of IETM - Type 1 <img id="drp1" src="./img/dwn.jpg" height="35hv" align="right"/></h2></button>
+						<h1>IETM Classes</h1>
+						<button type="button" class="collapsible" ><h3>Type 1<!--img id="drp1" src="./img/dwn.jpg" height="35hv" align="right"/--></h3></button>
 						<div class="content">
-						<h2>Class 1 </h2>
+						<h3>Class 1 </h3>
 						<p>
 							This IETM class follows the structure and format of a printed book, with indexes and table of contents that are hyperlinked into the content of the document.
 						</p>
 						<br>
-						<h2>Class 2</h2>
+						<h3>Class 2</h3>
 						<p>
 							This format includes more hyperlinks than Class I, such as figures, tables and section references. A hyperlinked PDF document is the typical example.
 						</p>
 						<br>						
-						<h2>Class 3</h2>
+						<h3>Class 3</h3>
 						<p>
 							The difference between Class II and Class III is analogous to the difference between PDF book and a web site. The document would be marked up with XML.
 						</p></div><br>
-						<button type="button" class="collapsible" onclick="b2()"><h2>Classes of IETM - Type 2<img id="drp2" src="./img/dwn.jpg" height="35hv" align="right"/></h2></button>
+						<button type="button" class="collapsible" ><h3>Type 2<!--img id="drp2" src="./img/dwn.jpg" height="35hv" align="right"/--></h3></button>
 						<div class="content">
-						<h2>Class 4</h2>
+						<h3>Class 4</h3>
 						<p>
 							Data stored in a relational database, obtaining benefits of data integrity and removal of data redundancy.
 						</p>
 						<br>
-						<h2>Class 5</h2>
+						<h3>Class 5</h3>
 						<p>
 							The IETM system may aggregate data from a large number of users input, feed that to the expert system that analyzes it and then the result gets feed back to the user through the IETM system.
 						</p>
 						<br>
-						<h2>Class 6</h2>
+						<!-- <h3>Class 6</h3>
 						<p>
 							Dynamic multi-destination hyperlink system was used. Included system-oriented layers and troubleshooting, assembly and disassembly aspects.
-						</p></div><br>
-						<button type="button" id="b3" class="collapsible" onclick="b3()"><h2>Available in Standards<img id="drp3" src="./img/dwn.jpg" height="35hv" align="right"/></h2></button>
+						</p></div><br> -->
+						<button type="button" id="b3" class="collapsible" ><h3>Available Standards<!--img id="drp3" src="./img/dwn.jpg" height="35hv" align="right"/--></h3></button>
 						<div class="content" align="left">
-						<h2>JSS</h2>
+						<h3>JSS</h3>
 						<p>
 							Joint Services Specification, a system of documented technical specifications used by the Indian Armed Forces.
 						</p>
 						<br>
-						<h2>JSG</h2>
+						<h3>JSG</h3>
 						<p>
 							Joint Services Guide, a system of documented technical specifications used by the Indian Armed Forces.
 						</p>
 						<br>
-						<h2>Our IETM Comply to:</h2>
-						<p >
+						<h3>Our IETM Comply to:</h3>
+						<h3 >
 							<li>MIL-PRF-87268</li>
 							<li>MIL-D-87269</li>
 							<li>MIL-M-87270</li>
-						</p>
+						</h3>
 						</div>
 					</div><!--
 					<div class="cta">
@@ -151,7 +142,8 @@
 				var content = this.nextElementSibling;
 				
 				if (content.style.display === "block") {
-				  content.style.display = "none";
+				  content.style.display = "block";
+				  content.style.display = "block";
 				  j=0;
 				 } else {
 				  content.style.display = "block";
