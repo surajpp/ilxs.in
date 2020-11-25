@@ -16,17 +16,22 @@ header {
 	width: 100%;	
 	align-items: center;
 }
-
 .logo-container,
 .nav-links,
 .cart {
 	display: flex;
 }
-
+.footer {
+	position: fixed;
+	background-color: #000000;
+	text-align: center;
+	color: #ffffff;
+	bottom: 0px;
+	width: 100%;
+}
 .logo-container {
-	flex: 1;
-	
-	height: suto;
+	flex: 1;	
+	height: auto;
 }
 .logo {
 	font-weight: 400;
@@ -39,18 +44,24 @@ nav {
 }
 .nav-links {
 	flex: 1;
-	justify-content: flex-end;
+	justify-content: space-around;
 	list-style: none;
 }
-.nav-link {
+.nav-links a{
 	color: #ffffff;
 	font-size: auto;
 	text-decoration: none;
-	padding-right: 1px;
 }
-.cart {
-	flex: 1;
-	justify-content: flex-end;
+.collab {
+	display: none;
+	cursor: pointer;
+}
+.collab div{
+	width: 25px;
+	height: 2px;
+	background-color: #ffffff;
+	margin: 5px;
+	transition: all 0.3s ease;
 }
 
 .presentation {
@@ -99,12 +110,10 @@ nav {
 	padding: 50px 0px 0px 0px;
 	
 }
-.intro-select {
-	
+.intro-select {	
 	background: transparent;
 	color: #ffffff;
 	font-size: 20px;
-		
 }
 .cta-select {
 	border: 2px solid #ffffff;
@@ -308,16 +317,79 @@ nav {
 		opacity: 0.2;
 	}
 }
-@media screen and (max-width: 600px) {
-	.nav-link {
-		font-size: 3.5vw;
+@media screen and (min-width: 1400px) {
+	.presentation {
+		flex-direction: column;
 	}
-	
+	.introduction {
+		margin-top: 6vh;
+		text-align: center;
+	}
+	.intro-text h1 {
+		font-size: 50px;
+	}
+	.intro-text p {
+		text-align: justify;
+		font-size: 38px;		
+	}
+	.intro-select {
+		font-size: 50px;		
+	}
+	.laptop-select {
+		right: 50%;
+		width: 100%;
+		transform: translate(50%, 5%);
+		margin-top: 2px;
+	}
+	.nav-link {
+		font-size: 1.5vw;
+	}
+	.cta {
+		padding: 10px 0px 0px 0px;
+	}
+	.cta-select {
+		border: 2px solid #ffffff;
+		font-size: 1.5vw;
+		width: 250px;
+	}
+}
+@media screen and (max-width: 700px) {
+	body{
+		overflow-x: hidden;
+	}
+	.footer {
+		font-size: 2vh;
+		width: 80%;
+	}
+	.mob {
+		height: 8.5vh;
+	}
+	.nav-link {
+	display: none;
+	}
+	.nav-links {
+		position: absolute;
+		right: 0px;
+		height: 25vh;
+		top: 5%;
+		background-color: #000000;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 30%;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+	.nav-links li{
+		opacity: 0;	
+	}
+	.collab {
+		display: block;
+	}	
 	.th, td {
-		  font-size: 3.5vw;
-		
+		font-size: 3vw;
 		}
-		.intro-text h3 {
+	.intro-text h3 {
 	font-size: 6vw;
 }
 	.intro-text h2 {
@@ -329,5 +401,27 @@ nav {
 	.li p {
 	font-size: 4vw;
 }
-	
+}
+.nav-active{
+	transform: translateX(0%);
+}
+@keyframes navLinkFade{
+	from{
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+	opacity: 0;
+}
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px,-6px);
 }
