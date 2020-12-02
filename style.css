@@ -100,9 +100,8 @@ nav {
 	color: #585772;
 	text-align: left;
 }
-.intro-text p {
-	
-	font-size: 22px;
+.intro-text p {	
+	font-size: 18px;
 	color: #ffffff;
 	margin: 5px;
 }
@@ -125,6 +124,37 @@ nav {
 	cursor: pointer;
 	font-size: 16px;
 	margin: 1px;
+}.cta-prod {
+	border: 2px solid #ffffff;
+	border-radius: 5px;
+	background: transparent;
+	color: #ffffff;
+	width: 28%;
+	height: 190px;
+	cursor: pointer;
+	font-size: 16px;
+	margin: 0px;
+	display: flex;
+}
+.proddata {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+}
+.proddata p{
+	display: flex;
+	width: 70%;
+}
+.cta-prod1 {
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+	background: transparent;
+	color: #ffffff;
+	width: 126px;
+	height: 126px;
+	cursor: pointer;
+	font-size: 16px;
+	margin: 1px;
 }
 .cta-add {
 	background: #c36cbb;
@@ -137,7 +167,6 @@ nav {
 	margin: 30px 5px 5px 30px;
 	color: #ffffff;
 }
-
 .cover {
 	flex: 1;
 	display: flex;
@@ -153,6 +182,9 @@ nav {
 	animation: drop 1.5s ease;
 	border-radius: 8px;
 }
+.mob {
+		vertical-align: top;
+	}
 .coverspot {
 	flex: 1;
 	display: flex;
@@ -190,7 +222,6 @@ nav {
 	left: 20%;
 	z-index: -1;
 }
-
 .laptop-select {
 	width: 25%;
 	display: flex;
@@ -201,7 +232,6 @@ nav {
 	margin-top: 2px;
 	padding: 0;
 }
-
 .form-control {
     display: block;
     width: 100%;
@@ -220,7 +250,6 @@ nav {
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
-
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -321,16 +350,25 @@ nav {
 	.presentation {
 		flex-direction: column;
 	}
+	.nav-links a{
+	font-size: 25px;
+}
+	.presentation p{
+	width: 100%;
+	}
 	.introduction {
 		margin-top: 6vh;
 		text-align: center;
+	}
+	.cta-prod {
+		height: 210px;
 	}
 	.intro-text h1 {
 		font-size: 50px;
 	}
 	.intro-text p {
 		text-align: justify;
-		font-size: 38px;		
+				
 	}
 	.intro-select {
 		font-size: 50px;		
@@ -356,6 +394,26 @@ nav {
 @media screen and (max-width: 700px) {
 	body{
 		overflow-x: hidden;
+	}
+	.presentation p{
+	display: block;
+	width: 100%;
+	}
+	.proddata p{
+	font-size: 14px;
+	}
+	.proddata{
+		display: block;
+		width: 100%;
+	}
+	.mob {
+		height: 15%;
+		width: 15%;
+		vertical-align: top;
+	}
+	.cta-prod {
+	width: 100%;
+	height: 182px;
 	}
 	.footer {
 		font-size: 2vh;
