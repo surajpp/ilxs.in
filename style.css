@@ -417,9 +417,6 @@ nav {
 	body{
 		overflow-x: hidden;
 	}
-	.footer {
-	width: 100%;
-}
 	th {
     font-size: 14px;
 }
@@ -458,7 +455,7 @@ nav {
 	}
 	.footer {
 		font-size: 2vh;
-		width: 80%;
+		width: 100%;
 	}
 	.mob {
 		height: 8.5vh;
