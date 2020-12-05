@@ -417,6 +417,9 @@ nav {
 	body{
 		overflow-x: hidden;
 	}
+	.footer {
+	width: 100%;
+}
 	th {
     font-size: 14px;
 }
