@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<title>Products </title>
+		<style>
+		.collapsible {
+		  background-color: #2196f33b;
+		  color: white;
+		  cursor: pointer;
+		  padding: 10px;
+		  width: 100%;
+		  border: none;
+		  border-radius: 5px;
+		  text-align: left;
+		  outline: none;
+		  font-size: 15px;
+		  .up {
+		  display: none;
+		  vertical-align: baseline;
+		}
+		.dwn {
+		  display: block;
+			vertical-align: baseline;
+		}
+		}
+		
+		.active, .collapsible:hover {
+		  
+		}
+
+		.content {
+		  padding: 0 10px;
+		  display: block;
+		  width: 100%;
+		  overflow: hidden;
+		  background-color: transparent;
+		}
+}
+</style>
+	</head>
+	<body style="background-image:url('./img/bagnd.jpg'); margin: 0px;">
+		<header>
+<div class="logo-container" onclick="window.location.href='./index.html'">
+				<img src="./img/123.png" alt="logo"/>
+				<!--<h4 class="logo" href="./index.html">ilxs</h4>-->
+			</div>		
+			<nav>			
+				<ul class="nav-links">
+					<li><a href="./index.html">Home</a></li>
+					<li><a class="nav-link" >|</a></li>
+					<li><a href="./about.html">About Us</a></li>
+					<li><a class="nav-link" >|</a></li>
+					<li><a href="./product.html">Products</a></li>
+					<li><a class="nav-link" >|</a></li>
+					<li><a href="./contact.html" >Contact</a></li>
+				</ul>
+				<div class="collab" align="right">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+			</nav>
+			<script src="coll.js"></script>	
+		</header>
+
+		<main ><br><br>
+			<section class="presentation">
+				<div class="introduction">
+					<div  class="intro-text">
+						<h1>S1000D</h1>
+						<p>S1000D is an international specification for the production of technical publications and also extended to non-technical publications. Initially developed by the AeroSpace and Defence Industries Association of Europe (ASD), it is now collaborativley produced by three organisations namely:</p>
+						<ul style="padding-left:60px">
+						<li>AeroSpace and Defence Industries Association of Europe (ASD)</li>
+						<li>Aerospace Industries Association of America (AIA)</li><li>
+							ATA e-Business Program </li>
+						</ul>	
+						<br>
+						<br><p>
+						The specification continues to evolve and currently is applicable to a variety of products:</p>
+						<ul style="padding-left:60px">	
+							<li>Any type of equipment (including both military and civil products)</li>
+							<li>Construction</li>
+							<li>Policy procedures</li>
+							<li>Legal documentation</li>
+						</ul>
+						<br><p>
+						The concept of this specification was originated in the early 1980s as an aerospace standard. At that time, most civil airline projects were being documented in accordance with specification ATA 100 with military projects following various national specifications. Documentation Working Group (DWG) consisted of European industry representatives tasked to report on current documentation practices and to recommend a unified method of documentation for air vehicle projects. The  DWG recognized that the only internationally accepted specification in the aerospace field was ATA 100. It was therefore decided to attempt to harmonize civil and military documentation using ATA 100 as a source document. The DWG invited the nations to provide military representatives who would participate in its activities and established a subsidiary, which was designated the Augmented Documentation Working Group (ADWG).
+						</p><br><p>
+						To ease reading of the specification it has been split into multiple chapters covering aspects such as creation, management and publishing, the full lifecycle of technical publications creation.
+						</p><br><br>
+						<p><b>Principal Concepts</b></p>
+						<p>The following sections deal with the principal concepts within the specification. These concepts underpin a publications program using S1000D, and enable a move from a book paradigm to an information one.
+						</p><br><br><p><b>Data Module
+						</b></p>
+						<p>A data module is defined as a stand alone information unit and contains descriptive, procedural or operational data for a platform, system or a component.It is produced in such a form that it can be stored and retrieved from a Common Source Data Base by using the data module code as the identifier.It is produced in SGML (up to S1000D Issue 3.0) or XML according to specific DTDs or Schemas, all of which are provided with the specification.
+						</p><br><br><p><b>Data Module Structure</b></p>
+						<p>Each data module comprises two parts, identification and status section and a contents section.
+The Identification and Status section provides information for:
+						</p>
+						<ul style="padding-left:60px">
+						<li>Managing the data module within the CSDB.</li>
+						<li>Managing data module applicability.</li>
+						<li>Managing the quality assurance process.</li>
+						<li>Controlling the retrieval processes.</li>
+						</ul>
+						<br><p>
+						For more information on S1000D, visit <a href = "https://s1000d.org/">S1000D website</a>.
+						</p>
+						<br>
+						
+						</div>
+					</div><!--
+					<div class="cta">
+						<button class="cta-select">IETM</button>
+						<button class="cta-select">Documentation</button>
+						<button class="cta-select">S1000D</button>
+						
+					</div>-->
+				</div>
+				<!--
+				<div class="cover">
+					<img src="./img/matebook.png" alt="matebook" />
+					<img src="./img/snow.jpg" alt="matebook" />
+				</div>-->
+			</section>
+			<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+			var j=0;	
+			for (i = 0; i < coll.length; i++) {
+			  coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				
+				if (content.style.display === "block") {
+				  content.style.display = "block";
+				  j=0;
+				 } else {
+				  content.style.display = "block";
+				j=1;
+				}
+			  }
+			  );
+			}
+			
+			function b1(){		
+			if (j === 0) {
+				  document.getElementById("drp1").src="./img/up.jpg";
+				  
+				 } else {
+				 document.getElementById("drp1").src="./img/dwn.jpg";				
+				}
+			}
+			
+			function b2(){
+			if (j === 0) {
+				  document.getElementById("drp2").src="./img/up.jpg";				  
+				 } else {
+				 document.getElementById("drp2").src="./img/dwn.jpg";				
+				}
+			}
+			
+			</script>
+			<br>
+			<div class="footer">
+			<h6>Copyright © 2020, ILXS, All rights reserved.</h6>
+			</div>
+		</main>
+	</body
