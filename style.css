@@ -36,6 +36,9 @@ th {
 	bottom: 0px;
 	width: 100%;
 }
+.ap {
+		font-size : 0.1px;
+	}
 .logo-container {
 	flex: 1;	
 	height: 50px;
