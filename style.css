@@ -537,7 +537,7 @@ nav {
 }
 
 .typewriter h1 {
-  color: #1c2c66;
+  color: #f4be00;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
