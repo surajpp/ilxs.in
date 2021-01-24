@@ -51,7 +51,7 @@ body {
     transform: scaleY(0.1);
     background: #fff;
   }
-  50%{
+  70%{
     transform: scaleY(1);
     background: #2ecc71;
   }
