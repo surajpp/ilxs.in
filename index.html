@@ -36,7 +36,19 @@
 		
 </style>
 	</head>
-	<body style="background-image:url('./img/bagnd.jpg'); margin: 0px;">
+	<body onload="preFunction()"; style="background-image:url('./img/bagnd.jpg'); margin: 0px;">
+		
+	<div class="middle" id="loading">
+      <div class="bar bar1"></div>
+      <div class="bar bar2"></div>
+      <div class="bar bar3"></div>
+      <div class="bar bar4"></div>
+      <div class="bar bar5"></div>
+      <div class="bar bar6"></div>
+      <div class="bar bar7"></div>
+      <div class="bar bar8"></div>
+    </div>
+		
 		<header >
 			<div class="logo-container" onclick="window.location.href='./index.html'">
 				<img src="./img/123.png" alt="logo" />
@@ -249,6 +261,11 @@
 				<img src="./img/arrow-right.svg" onclick="plusDivs(1)"/>
 				
 				<script>
+				var preloader = document.getElementById("loading");
+
+					function preFunction(){
+						preloader.style.display = 'none';
+					};
 								
 				var slideIndex = 1;
 				showDivs(slideIndex);
