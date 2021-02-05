@@ -378,7 +378,13 @@ nav {
   text-decoration: none;
   cursor: pointer;
 }
-
+.prefooter{
+	padding-bottom: 20px;
+	background: rgba(98,121,52,0.48);
+	transition-property: background-color, backdrop-filter, -webkit-backdrop-filter;
+	backdrop-filter: saturate(180%) blur(20px);
+	cursor: pointer;
+		}
 
 @keyframes drop {
 	0% {
