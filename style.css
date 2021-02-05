@@ -492,6 +492,9 @@ nav {
 	th {
     font-size: 14px;
 }
+	.prefooter{
+	display: none;
+		}
 	.proddat {
 	display: block;
 }
