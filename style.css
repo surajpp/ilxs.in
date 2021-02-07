@@ -494,6 +494,11 @@ nav {
 	th {
     font-size: 14px;
 }
+	.cta-select {
+		border: 2px solid #000000;
+		font-size: 3.6vw;
+		width: 48%;		
+	}
 	.prefooter{
 	display: none;
 		}
