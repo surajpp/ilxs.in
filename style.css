@@ -93,6 +93,8 @@ th {
 }
 .ap {
 		font-size : 0.1px;
+		background-image:url('./img/bckgnd.png'); 
+		background-repeat: repeat;
 	}
 .logo-container {
 	flex: 1;	
