@@ -26,8 +26,52 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>Technical Documentation</title>
 		<style>
+		.ddpdt {
+			  float: left;
+			  overflow: hidden;			  
+			}
+
+			.ddpdt .dropbtn { 
+			  border: none;
+			  outline: none;
+			  background-color: inherit;
+			  font-family: inherit;			  
+			}
+
+			.pdt a:hover, .ddpdt:hover .dropbtn {
+			  background-color: #327df2;			  
+			}
+
+			.dropdown-content {
+			   display: none;
+				  position: absolute;
+				  background-color: rgba(29,29,37,0.7);
+				  min-width: 160px;
+				  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				  z-index: 1;
+				  font: inherit;
+			}
+
+			.dropdown-content a {
+			  float: none;
+			  color: #fff;
+			  padding: 8px 10px;
+			  text-decoration: none;
+			  display: block;
+			  text-align: left;			  
+			}
+
+			.dropdown-content a:hover {
+			  background-color: #327df2;
+			}
+
+			.ddpdt:hover .dropdown-content {
+			  display: block;
+			}
+			
 		.collapsible {
 		  background-color: #2196f33b;
 		  color: white;
@@ -79,7 +123,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<li><a class="nav-link" >|</a></li>
 					<li><a href="./about.html">About Us</a></li>
 					<li><a class="nav-link" >|</a></li>
-					<li><a href="./product.html">Products</a></li>
+					<div class="ddpdt">
+						<a class="dropbtn" href="./product.html">Products 
+						  <i class="fa fa-caret-down"></i>
+						</a>
+						<div class="dropdown-content" padding-top="100px">
+						  <a href="./ietm.html">IETM</a>
+						  <a href="./sood.html">IETP-S1000D</a>
+						  <a href="./cbt.html">CBT</a>
+						  <a href="./documentation.html">Documentation</a>
+						</div></div>
 					<li><a class="nav-link" >|</a></li>
 					<li><a href="./contact.html" >Contact</a></li>
 					<li><a class="nav-link" >|</a></li>
