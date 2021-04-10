@@ -292,26 +292,26 @@ nav {
   animation: glowing 1500ms infinite;
 }
 @-webkit-keyframes glowing {
-  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
+  0% { background-color: #00b2a273; -webkit-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #00ffd0cc; -webkit-box-shadow: 0 0 40px #FF0000; }
   100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
 }
 
 @-moz-keyframes glowing {
-  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
+  0% { background-color: #00b2a273; -moz-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #00ffd0cc; -moz-box-shadow: 0 0 40px #FF0000; }
   100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
 }
 
 @-o-keyframes glowing {
-  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  0% { background-color: #00b2a273; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #00ffd0cc; box-shadow: 0 0 40px #FF0000; }
   100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
 }
 
 @keyframes glowing {
-  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  0% { background-color: #00b2a273; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #00ffd0cc; box-shadow: 0 0 40px #FF0000; }
   100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
 }
 .cta-prod {
@@ -543,7 +543,7 @@ nav {
   display: table;
   width:100%;
   height:100%;
-  padding-top: 320px;
+  padding-top: 160px;
 }
 
 #wrapper-inner {
@@ -1046,7 +1046,7 @@ nav {
   display: table;
   width:100%;
   height:100%;
-  padding-top: 80px;
+  padding-top: 0px;
 }
 
 #wrapper-inner {
@@ -1094,6 +1094,7 @@ nav {
   font-weight:bold;
   letter-spacing:.1em;
   padding-bottom: 0px;
+padding-top: 0px;
 }
 #scroll-down::before {
     -webkit-animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
@@ -1348,12 +1349,7 @@ nav {
     color:#f0f0f0;
   }
 }
-#wrapper {
-  display: table;
-  width:100%;
-  height:100%;
-  padding-top: 120px;
-}
+
 }
 .nav-active{
 	transform: translateX(0%);
