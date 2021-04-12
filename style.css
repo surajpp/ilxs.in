@@ -286,33 +286,33 @@ nav {
 	cursor: pointer;
 	font-size: 16px;
 	margin: 1px;
--webkit-animation: glowing 1500ms infinite;
-  -moz-animation: glowing 1500ms infinite;
-  -o-animation: glowing 1500ms infinite;
-  animation: glowing 1500ms infinite;
+-webkit-animation: glowing 2500ms infinite;
+  -moz-animation: glowing 2500ms infinite;
+  -o-animation: glowing 2500ms infinite;
+  animation: glowing 2500ms infinite;
 }
 @-webkit-keyframes glowing {
-  0% { background-color: #00b2a273; -webkit-box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #00ffd0cc; -webkit-box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+  0% { background-color: #18191b; -webkit-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #18191b; -webkit-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #18191b; -webkit-box-shadow: 0 0 3px #B20000; }
 }
 
 @-moz-keyframes glowing {
-  0% { background-color: #00b2a273; -moz-box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #00ffd0cc; -moz-box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+  0% { background-color: #18191b; -moz-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #18191b; -moz-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #18191b; -moz-box-shadow: 0 0 3px #B20000; }
 }
 
 @-o-keyframes glowing {
-  0% { background-color: #00b2a273; box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #00ffd0cc; box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  0% { background-color: #18191b; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #18191b; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #18191b; box-shadow: 0 0 3px #B20000; }
 }
 
 @keyframes glowing {
-  0% { background-color: #00b2a273; box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #00ffd0cc; box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  0% { background-color: #18191b; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #18191b; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #18191b; box-shadow: 0 0 3px #B20000; }
 }
 .cta-prod {
 	border: 2px solid #ffffff;
