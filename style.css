@@ -267,14 +267,14 @@ nav {
 }
 .cta-select {
 	border: 2px solid #ffffff;
-	border-radius: 5px;
+	border-radius: 24px;
 	background: transparent;
 	color: #ffffff;
 	width: 200px;
-	height: 40px;
+	height: 30px;
 	cursor: pointer;
 	font-size: 16px;
-	margin: 1px;
+	margin: 5px;
 }
 .cta-glow {
 	border: 2px solid #ffffff;
@@ -385,7 +385,7 @@ nav {
 	height: 100%;
 	width: 100%;
 	filter: drop-shadow (0px 5px 3px black);
-	animation: drop 1.5s ease;
+	animation: drop 1.5s ease-in-out;
 	border-radius: 8px;
 }
 
@@ -507,7 +507,7 @@ nav {
 }
 .prefooter{
 	padding-bottom: 10px;
-	background: rgba(98,121,52,0.48);
+	background: #18191b;
 	transition-property: background-color, backdrop-filter, -webkit-backdrop-filter;
 	backdrop-filter: saturate(180%) blur(20px);
 	cursor: pointer;
@@ -516,11 +516,11 @@ nav {
 @keyframes drop {
 	0% {
 		opacity: 0;
-		transform: translateY(-80px);
+		transform: translateX(-70px);
 	}
 	100% {
 		opacity: 1;
-		transform: translateY(0px);
+		transform: translateX(0px);
 	}
 }
 
@@ -948,15 +948,18 @@ nav {
 	td {
     width: auto;
 }
+.logo-container {
+	height: 45px;
+}
 	.cta-select {
 		border: 2px solid #ffffff;
 		font-size: 3.6vw;
-		width: 48%;		
+		width: 45%;		
 	}
 	.cta-glow {
 		border: 2px solid #ffffff;
 		font-size: 3.6vw;
-		width: 48%;		
+		width: 45%;		
 	}
 	.prefooter{
 	display: none;
@@ -966,6 +969,9 @@ nav {
 }
 	.cta-vd{
 		width: 100%;
+	}
+	.presentation {
+	width: 90%;
 	}
 	.presentation p{
 	display: block;
